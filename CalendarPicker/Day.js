@@ -89,11 +89,12 @@ export default function Day(props) {
   if (!dateOutOfRange) {
     // set today's style
     let isToday = thisDay.isSame(today, 'day');
-    if (isToday) {
-      daySelectedStyle = styles.selectedToday;
-      // todayTextStyle prop overrides selectedDayTextColor (created via makeStyles)
-      selectedDayColorStyle = todayTextStyle || styles.selectedDayLabel;
-    }
+    //DO NOT MARK TODAY
+    // if (isToday) {
+    //   daySelectedStyle = styles.selectedToday;
+    //   // todayTextStyle prop overrides selectedDayTextColor (created via makeStyles)
+    //   selectedDayColorStyle = todayTextStyle || styles.selectedDayLabel;
+    // }
 
     for (let cds of customDatesStyles) {
       if (thisDay.isSame(moment(cds.date), 'day')) {
@@ -159,20 +160,6 @@ export default function Day(props) {
 
     return (
       <View style={[styles.dayWrapper, customContainerStyle]}>
-        {
-          marked
-          ? <View style={{
-              position: 'absolute',
-              top: 4,
-              right: 4,
-              borderRadius: 4,
-              width: 4,
-              height: 4,
-              backgroundColor: 'red'
-            }} />
-          : null
-
-        }
         <TouchableOpacity
           style={[customDateStyle, daySelectedStyle, propSelectedDayStyle ]}
           onPress={() => onPressDay(day) }>
@@ -180,6 +167,12 @@ export default function Day(props) {
             { day }
           </Text>
         </TouchableOpacity>
+        {
+          marked
+          ? <View style={[styles.markStyle, (!allowRangeSelection && selectedStartDate && isThisDaySameAsSelectedStart) ? styles.markColorBlue : styles.markColorWhite ]} />
+          : null
+
+        }
       </View>
     );
   }

@@ -70,9 +70,10 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
     },
 
     selectedDay: {
-      width: 30*scaler,
-      height:30*scaler,
-      borderRadius: 30*scaler,
+      width: 35*scaler,
+      height: 35*scaler,
+      borderRadius: 3*scaler,
+      backgroundColor: '#FFF',
       alignSelf: 'center',
       justifyContent: 'center'
     },
@@ -96,6 +97,23 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
       backgroundColor: '#FFF',
       alignSelf: 'center',
       justifyContent: 'center'
+    },
+
+    markStyle: {
+      position: 'absolute',
+      top: 4,
+      right: 4,
+      borderRadius: 4,
+      width: 4,
+      height: 4,
+    },
+
+    markColorBlue: {
+      backgroundColor: '#4D5ABF'
+    },
+
+    markColorWhite: {
+      backgroundColor: '#FFF'
     },
 
     dayWrapper: {
@@ -136,11 +154,14 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
     },
 
     monthLabel: {
-      fontSize: 16*scaler,
+      fontSize: 18*scaler,
       color: '#000',
-      marginBottom: 10*scaler,
       width: 180*scaler,
-      textAlign: 'center'
+      textAlign: 'center',
+      alignSelf: "center",
+      color: '#4D5ABF',
+      letterSpacing: 0.23,
+      fontWeight: "600"  
     },
 
     headerWrapper: {

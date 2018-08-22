@@ -230,7 +230,9 @@ export default class CalendarPicker extends Component {
       maxRangeDuration,
       swipeConfig,
       customDatesStyles,
-      planedDayes
+      planedDayes,
+      previousComponent,
+      nextComponent
     } = this.props;
 
     let disabledDatesTime = [];
@@ -289,6 +291,8 @@ export default class CalendarPicker extends Component {
             previousTitle={previousTitle}
             nextTitle={nextTitle}
             textStyle={textStyle}
+            previousComponent={previousComponent}
+            nextComponent={nextComponent}
           />
           <LinearGradient
             start={{ x: 0, y: 0 }}
