@@ -120,6 +120,7 @@ export default class CalendarPicker extends Component {
     } = this.props;
 
     const date = moment({year: currentYear, month: currentMonth, day});
+    this.props.handleDatePicked(date);
 
     if (allowRangeSelection &&
       selectedStartDate &&
@@ -210,6 +211,7 @@ export default class CalendarPicker extends Component {
     } = this.state;
 
     const {
+      onHeaderDatePress,
       allowRangeSelection,
       startFromMonday,
       initialDate,
@@ -281,6 +283,7 @@ export default class CalendarPicker extends Component {
       >
         <View syles={styles.calendar}>
           <HeaderControls
+            onHeaderDatePress={onHeaderDatePress}
             styles={styles}
             currentMonth={currentMonth}
             currentYear={currentYear}
