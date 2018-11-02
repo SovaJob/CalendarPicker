@@ -54,7 +54,7 @@ export default class App extends Component {
         />
 
         <View>
-          <Text>SELECTED DATE:{ startDate }</Text>
+          <Text allowFontScaling={false}>SELECTED DATE:{ startDate }</Text>
         </View>
       </View>
     );
@@ -172,8 +172,8 @@ export default class App extends Component {
         />
 
         <View>
-          <Text>SELECTED START DATE:{ startDate }</Text>
-          <Text>SELECTED END DATE:{ endDate }</Text>
+          <Text allowFontScaling={false}>SELECTED START DATE:{ startDate }</Text>
+          <Text allowFontScaling={false}>SELECTED END DATE:{ endDate }</Text>
         </View>
       </View>
     );
@@ -255,8 +255,8 @@ export default class App extends Component {
         />
 
         <View>
-          <Text>SELECTED START DATE:{ startDate }</Text>
-          <Text>SELECTED END DATE:{ endDate }</Text>
+          <Text allowFontScaling={false}>SELECTED START DATE:{ startDate }</Text>
+          <Text allowFontScaling={false}>SELECTED END DATE:{ endDate }</Text>
         </View>
       </View>
     );

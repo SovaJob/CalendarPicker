@@ -13,7 +13,7 @@ export default function Controls({ styles, textStyles, label, onPressControl, co
     >
       {component
       ? component
-      : <Text style={[styles, textStyles]}>
+      : <Text allowFontScaling={false} style={[styles, textStyles]}>
           { label }
         </Text>}
     </TouchableOpacity>

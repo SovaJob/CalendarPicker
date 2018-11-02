@@ -41,7 +41,7 @@ export default function HeaderControls(props) {
         textStyles={textStyle}
       />
       <TouchableOpacity onPress={onHeaderDatePress}>
-        <Text style={[styles.monthLabel, textStyle]}>
+        <Text allowFontScaling={false} style={[styles.monthLabel, textStyle]}>
            { month } { year }
         </Text>
       </TouchableOpacity>
