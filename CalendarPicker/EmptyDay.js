@@ -14,7 +14,7 @@ export default function Day(props) {
         <TouchableOpacity
           /*style={styles.dayButton}*/
         >
-          <Text style={styles.dayLabel}>
+          <Text allowFontScaling={false} style={styles.dayLabel}>
           </Text>
         </TouchableOpacity>
       </View>

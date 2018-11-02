@@ -163,7 +163,7 @@ export default function Day(props) {
         <TouchableOpacity
           style={[customDateStyle, daySelectedStyle, propSelectedDayStyle ]}
           onPress={() => onPressDay(day) }>
-          <Text style={[styles.dayLabel, textStyle, customTextStyle, selectedDayColorStyle]}>
+          <Text allowFontScaling={false} style={[styles.dayLabel, textStyle, customTextStyle, selectedDayColorStyle]}>
             { day }
           </Text>
         </TouchableOpacity>
@@ -179,7 +179,7 @@ export default function Day(props) {
   else {  // dateOutOfRange = true
     return (
       <View style={styles.dayWrapper}>
-        <Text style={[textStyle, styles.disabledText]}>
+        <Text allowFontScaling={false} style={[textStyle, styles.disabledText]}>
           { day }
         </Text>
       </View>

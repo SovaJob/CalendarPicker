@@ -32,7 +32,7 @@ export default class App extends Component {
         />
 
         <View>
-          <Text>SELECTED DATE:{ startDate }</Text>
+          <Text allowFontScaling={false}>SELECTED DATE:{ startDate }</Text>
         </View>
       </View>
     );
