@@ -86,5 +86,10 @@
     "test": "node_modules/jest/bin/jest.js",
     "test:watch": "node_modules/jest/bin/jest.js --watch"
   },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
   "version": "5.20.0"
 }
