@@ -9,7 +9,7 @@ export default function Controls({ styles, textStyles, label, onPressControl, co
   return (
     <TouchableOpacity
       onPress={() => onPressControl()}
-      style={{flex: 1}}
+      style={{flex: 1, height: 20, paddingTop: 5}}
     >
       {component
       ? component

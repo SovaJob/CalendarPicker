@@ -154,6 +154,7 @@ export function makeStyles(scaler, backgroundColor, textColor, todayBackgroundCo
     },
 
     monthLabel: {
+      fontFamily: "Montserrat",
       fontSize: 18*scaler,
       color: '#000',
       width: 180*scaler,
