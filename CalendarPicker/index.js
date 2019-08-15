@@ -300,7 +300,7 @@ export default class CalendarPicker extends Component {
           <LinearGradient
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 0 }}
-            colors={['#484AAF', '#5880E6']}
+            colors={['#19366C', '#4363B5']}
             style={customStyles.linearGradient}
           >
             <Weekdays
